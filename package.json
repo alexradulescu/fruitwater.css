@@ -1,7 +1,7 @@
 {
-  "name": "fruit-watercss",
+  "name": "fruitwatercss",
   "version": "1.0.0",
-  "description": "",
+  "description": "A class-less css micro-framework",
   "main": "index.html",
   "scripts": {
     "start": "serve",

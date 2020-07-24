@@ -1,0 +1,154 @@
+/**
+ * LAYOUT
+ */
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #dbdbdb;
+  border-top: 1px solid var(--border);
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  width: 100%;
+  table-layout: fixed;
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px #cbd5e0;
+  overflow: hidden;
+}
+
+table caption {
+  text-align: left;
+}
+
+td,
+th {
+  padding: 8px 16px;
+  text-align: left;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
+th {
+  text-transform: uppercase;
+  background-color: var(--background-far);
+  font-size: small;
+  font-weight: normal;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+thead {
+  border-bottom: 1px solid var(--border);
+}
+
+tfoot {
+  border-top: 1px solid var(--border);
+}
+
+tbody tr:nth-child(odd) {
+  background-color: var(--background-stage);
+}
+
+details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #f7fafc;
+  background-color: var(--background-stage);
+  padding: 10px 10px 0;
+  margin: 1em 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #cbd5e0;
+}
+
+details[open] {
+  padding: 10px;
+}
+
+details > :last-child {
+  margin-bottom: 0;
+}
+
+details[open] summary {
+  margin-bottom: 10px;
+}
+
+summary {
+  display: list-item;
+  background-color: #f7fafc;
+  background-color: var(--background-stage);
+  padding: 10px;
+  margin: -10px -10px 0;
+  cursor: pointer;
+  outline: none;
+}
+
+summary:hover,
+summary:focus {
+  text-decoration: underline;
+}
+
+details > :not(summary) {
+  margin-top: 0;
+}
+
+summary::-webkit-details-marker {
+  color: #363636;
+  color: var(--text-main);
+}
+
+footer {
+  padding-top: 10px;
+}
+
+body > footer {
+  margin-top: 40px;
+}
+
+aside {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  grid-gap: 8px;
+}
+
+dl {
+  display: flex;
+  justify-content: space-between;
+}
+
+dd {
+  text-align: right;
+}
+
+dt,
+dd {
+  max-width: 75%;
+}
+
+dt + dd {
+  margin-left: 8px;
+}
+
+section {
+  border-radius: 12px;
+  padding: 16px;
+  background-color: #fff;
+  border: 1px solid #cbd5e0;
+}
+
+section > *:first-child {
+  margin-top: 0;
+}
+
+section > *:last-child {
+  margin-bottom: 0;
+}
