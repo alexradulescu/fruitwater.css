@@ -17,123 +17,101 @@
     <h1>FruitWater.css</h1>
 
     <p>
-      Water.css is a drop-in collection of CSS styles to make simple websites
-      like this just a little bit nicer.
+      FruitWater.css is a simple, class-less css micro-framework.
     </p>
     <p>
-      Now you can write your simple static site with nice semantic html, and
-      Water.css will manage the styling for you.
+      It is made for fun, to enjoy myself, while trying to push as far as possible, what can be done using no css classes or ids.
     </p>
+    <p>It is based and inspired of a few projects including:
+      <ul>
+        <li><a href="#">Water.css</a> - inspired both by name as well as many of the components. In fact this started as a fork of it</li>
+        <li><a href="#">Skeleton css</a> - for some of the design and ideas inspiration</li>
+        <li><a href="#">MVP.css</a> - gave me the inspiration for the <code>&lt;aside&gt;</code> columns system</li>
+        <li><a href="#">Tailwind css</a> & <a href="#">Tailwind UI</a> - inspired by their beautiful designs</li>
+      </ul></p>
 
-    <h2 id="goals">Goals</h2>
+    <h2 id="goals">Why and what for?</h2>
     <ul>
-      <li>Responsive</li>
-      <li>Good code quality</li>
-      <li>Good browser support</li>
+      <li>For fun</li>
+      <li>To see how far could I take a class-less system, while implementing some very opinionated but generic ideas</li>
+      <li>Good-enough for quick prototype, especially on <a href="#">Codesandbox</a> or something similar</li>
       <li>Small size (&lt; 2kb)</li>
       <li>Beautiful</li>
       <li>No classes</li>
     </ul>
 
-    <h2 id="demo">Element demos</h2>
-    <p>This is supposed to be a demo page so we need more elements!</p>
+    <h2 id="demo">Documentation</h2>
+    <p>All the demos below are made so you can pretty much just copy-paste and go.</p>
+    <p>If you come up with even more creative ideas, please open an issue and add your code and I'll add it up,</p>
 
-    <h3 id="form-elements">Form elements</h3>
-    <form>
-      <fieldset>
-        <legend>Form</legend>
-        <label for="email">Email</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="john.doe@gmail.com"
-        />
-
-        <label for="id">User id (read only)</label>
-        <input readonly name="id" id="id" value="04D6H89Z" />
-
-        <label for="disabled">Random disabled input</label>
-        <input
-          disabled
-          name="disabled"
-          id="disabled"
-          placeholder="Because why not?"
-        />
-
-        <label for="about">About me</label>
-        <textarea
-          name="about"
-          id="about"
-          placeholder="I am a textarea..."
-        ></textarea>
-
-        <label>Choose a Doe:</label>
+    <section>
+      <h2>Typography</h2>
+      <br/>
+      <aside><div>
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+          <h6>Heading 6</h6>
+          <p>Paragraph</p>
+      </div>
+        <pre><code>
+          &lt;h1&gt;Heading 1&lt;/h1&gt;
+          &lt;h2&gt;Heading 2&lt;/h2&gt;
+          &lt;h3&gt;Heading 3&lt;/h3&gt;
+          &lt;h3&gt;Heading 3&lt;/h3&gt;
+          &lt;h5&gt;Heading 5&lt;/h5&gt;
+          &lt;h6&gt;Heading 6&lt;/h6&gt;
+          &lt;p&gt;Paragraph&lt;/p&gt;
+        </code></pre>
+      </aside>
+      <aside>
         <div>
-          <input type="radio" id="john" name="drone" value="john" checked />
-          <label for="john">John Doe</label>
+          <p><strong>Strong text</strong> - for text that is meant to stand out, not only bold but also darker</p>
+          <p><b>Bold text</b> - plain bold text</p>
+          <p><em>Emphasys text</em> - emphasys and italic in this case look the same</p>
+          <p><small>Small text</small> - for small text, usually next to larger text</p>
+          <p><a href="#">A link</a> - a self-standing link. In other cases, such as with a <code>nav</code>, anchors will look differently</p>
+          <p><code>code</code> - great for code but also as a no-class replcement of badges</p>
+          <p><samp>samp</samp> - same as above, as a replacement for badges mostly</p>
+          <p><ins>Insert</ins> - same as above, for inserted text and success-like badge</p>
+          <p><del>Delete</del> - same as above for deleted text(who uses that?) or danger-like badge</p>
+          <p><mark>Mark</mark> - same as above for deleted text(who uses that?) or danger-like badge</p>
+          <p><kbd>Keyboard</kbd> - same as above for keyboard shortcuts for example or primary/info-like badge/tag</p>
+          <p><var>var 0123456789</var> - perfect for numbers and when you need monospaced font</p>
         </div>
-        <div>
-          <input type="radio" id="jane" name="drone" value="jane" checked />
-          <label for="jane">Jane Doe</label>
-        </div>
-        <div>
-          <input type="radio" id="johnny" name="drone" value="johnny" checked />
-          <label for="johnny">Johnny Doe</label>
-        </div>
+        <code>
+            &lt;strong&gt;Strong text&lt;/strong&gt;
+            &lt;b&gt;Bold text&lt;/b&gt;
+            &lt;em&gt;Emphasys text&lt;/em&gt;
+            &lt;i&gt;Italic text&lt;/i&gt;
+            &lt;small&gt;Small text&lt;/small&gt;
+            &lt;a&gt;href="#">A link&lt;/a&gt;
+            &lt;code&gt;code&lt;/code&gt;
+            &lt;samp&gt;Samp&lt;/samp&gt;
+            &lt;var&gt;var&lt;/var&gt;
+            &lt;ins&gt;Insert&lt;/ins&gt;
+            &lt;del&gt;Delete&lt;/del&gt;
+            &lt;kbd&gt;Keyboard&lt;/kbd&gt;
+        </code>
+      </aside>
+        <blockquote class="blockquote">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          
+          <cite class="blockquote-footer">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </cite>
+        </blockquote>
+        <pre><code>&lt;blockquote class="blockquote"&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
 
-        <br />
-
-        <input type="checkbox" name="remember" id="remember" checked />
-        <label for="remember">Remember me</label>
-
-        <button type="submit">Submit</button>
-      </fieldset>
-    </form>
-
-    <h3 id="code">Code</h3>
-    <p>
-      Below is some code, you can copy it with <kbd>Ctrl-C</kbd>. Did you know,
-      <code>alert(1)</code> can show an alert in JavaScript!
-    </p>
-    <pre><code>// This logs a message to the console and check out the scrollbar.<br>console.log('Hello, world!')</code></pre>
-
-    <h3 id="other">Other</h3>
-    <p>
-      Here's a horizontal rule and image because I don't know where else to put
-      them.
-    </p>
-    <img src="https://placekitten.com/408/287" alt="Example kitten" />
-    <hr />
-
-    <p>And here's a nicely marked up table!</p>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Quantity</th>
-          <th>Price</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Godzilla</td>
-          <td>2</td>
-          <td>$299.99</td>
-        </tr>
-        <tr>
-          <td>Mozilla</td>
-          <td>10</td>
-          <td>$100,000.00</td>
-        </tr>
-        <tr>
-          <td>Quesadilla</td>
-          <td>1</td>
-          <td>$2.22</td>
-        </tr>
-      </tbody>
-    </table>
-
+  &lt;cite&gt;
+    Someone famous in Source Title
+  &lt;/cite&gt;
+&lt;/blockquote&gt;</code></pre>
+    </section>
+    
     <details>
       <summary>Some summary/details can't hurt!</summary>
       <p>Lorem ipsum dolor sit blah blah.</p>
